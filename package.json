@@ -5,7 +5,9 @@
   "main": "src/pip-captions/index.ts",
   "types": "src/pip-captions/index.ts",
   "scripts": {
-    "dev": "remotion studio",
+    "preview": "remotion studio --port=8081",
+    "transcribe": "node scripts/transcribe_and_caption.js",
+    "render": "remotion render CaptionedVideo out.mp4",
     "build": "remotion bundle"
   },
   "keywords": [
